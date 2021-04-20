@@ -1,0 +1,102 @@
+global grid1
+global grid2
+global grid3
+global grid4
+global grid5
+global grid6
+global grid7
+global grid8
+global grid9
+
+
+grid1 = 'test'
+grid2 = 'test'
+grid3 = 'test'
+grid4 = 'test'
+grid5 = 'test'
+grid6 = 'test'
+grid7 = 'test'
+grid8 = 'test'
+grid9 = 'test'
+
+def player():
+    print('What number do you want to change?')
+    changed = False
+    while changed == False:
+        picker = input('')
+        if picker == 1:
+            print('What are you going to change this to?')
+            changer = input('')
+            grid1 = changer
+            board()
+        if picker == 2:
+            print('What are you going to change this to?')
+            changer = input('')
+            grid2 = changer
+            board()
+        if picker == 3:
+            print('What are you going to change this to?')
+            changer = input('')
+            grid3 = changer
+            board()
+        if picker == 4:
+            print('What are you going to change this to?')
+            changer = input('')
+            grid4 = changer
+            board()
+        if picker == 5:
+            print('What are you going to change this to?')
+            changer = input('')
+            grid5 = changer
+            board()
+        if picker == 6:
+            print('What are you going to change this to?')
+            changer = input('')
+            grid6 = changer
+            board()
+        if picker == 7:
+            print('What are you going to change this to?')
+            changer = input('')
+            grid7 = changer
+            board()
+        if picker == 8:
+            print('What are you going to change this to?')
+            changer = input('')
+            grid8 = changer
+            board()
+        if picker == 9:
+            print('What are you going to change this to?')
+            changer = input('')
+            grid9 = changer
+            board()
+
+def board():
+    global grid1
+    global grid2
+    global grid3
+    global grid4
+    global grid5
+    global grid6
+    global grid7
+    global grid8
+    global grid9
+
+    print(grid1 + grid2 + grid3)
+    print(grid4 + grid5 + grid6)
+    print(grid7 + grid8 + grid9)
+    player()
+
+print('Do you want to play Tic Tac Toe')
+play = False
+while play == False:
+    response =  input('')
+    if response.lower() == 'yes':
+        board()
+        play = True
+        break
+    elif response.lower() ==  'no':
+        print('ok bye')
+        play = True
+        break
+    else:
+        print('Please type either yes or no')
